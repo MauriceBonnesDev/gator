@@ -21,3 +21,5 @@ SELECT
 FROM
     users;
 
+-- name: GetUserByID :one
+SELECT * FROM users where id = $1;
